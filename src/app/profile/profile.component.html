@@ -1,0 +1,6 @@
+<ul class="lsit-group">
+  <li *ngFor="let item of myRoutes" (click)="getDetail(item)" class="list-group-item">
+    <span>{{item.index}}. </span>
+    <span>{{item.runDate}}</span>
+  </li>
+</ul>

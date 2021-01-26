@@ -1,0 +1,21 @@
+<div>
+  <label>Data biegu: </label>
+  <span> {{ runDate }}</span
+  ><Br />
+  <label>Godzina rozpoczęcia: </label>
+  <span> {{ runStart }}</span
+  ><Br />
+  <label>Godzina zakończenia: </label>
+  <span> {{ runStop }}</span
+  ><Br />
+  <label>Czas trwania biegu: </label>
+  <span> {{ timeElapsed.minutes() }} minuty {{ timeElapsed.seconds() }} sekundy</span><br>
+  <label>Średnia prędkość: </label>
+  <span> {{ avgSpeed }} </span><span>km/h</span><br>
+  <label>Pokonany dystans: </label>
+  <span> {{ distance }} </span><span>m</span>
+  <Br />
+  <div id="map">
+    <agm-map></agm-map>
+  </div>
+</div>
